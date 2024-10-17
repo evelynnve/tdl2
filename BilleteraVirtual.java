@@ -8,8 +8,9 @@ import java.util.List;
  */
 
 public class BilleteraVirtual {
-	private double saldoTotal;
+	private Fiat saldoTotalFIAT;
 	private List<Moneda> moneda;
+	private List<Transacciones> historial;
 	
 	public BilleteraVirtual () {
 		
@@ -19,23 +20,24 @@ public class BilleteraVirtual {
 	 * @param saldoTotal
 	 * @param moneda (objeto moneda)
 	 */
-	public BilleteraVirtual (double saldoTotal, List<Moneda> moneda) {
-		this.saldoTotal= saldoTotal;
+	public BilleteraVirtual (double saldoTotalFIAT, List<Moneda> moneda, List<Transacciones> historial) {
+		this.saldoTotalFIAT= saldoTotalFIAT;
 		this.moneda= moneda;
+		this.historial= historial;
 	}
 	/**
 	 * 
-	 * @return saldoTotal
+	 * @return saldoTotalFIAT
 	 */
-	public double getSaldoTotal() {
+	public double getSaldoTotalFIAT() {
 		return saldoTotal;
 	}
 	/**
 	 * 
-	 * @param saldoTotal
+	 * @param saldoTotalFIAT
 	 */
-	public void setSaldoTotal(double saldoTotal) {
-		this.saldoTotal = saldoTotal;
+	public void setSaldoTotalFIAT(double saldoTotalFIAT) {
+		this.saldoTotalfiat = saldoTotalfiat;
 	}
 	/**
 	 * 
@@ -50,5 +52,16 @@ public class BilleteraVirtual {
 	 */
 	public void setMoneda(List<Moneda> moneda) {
 		this.moneda = moneda;
+	}
+	/**
+	 * 
+	 * @return historial
+	 */
+	public Transacciones getHistorial() {
+		return historial;
+	}
+
+	public void setHistorial(List<Transacciones> historial) {
+		this.historial.addAll(historial);
 	}
 }
