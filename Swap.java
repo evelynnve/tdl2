@@ -10,6 +10,8 @@ import java.util.List;
 
 public class Swap extends Transacciones {
 
+	private List<Double> tasaDeMercado;
+	private List<Double> comAplicables;
 	
 	public Swap () {
 		
