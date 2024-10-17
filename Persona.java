@@ -3,16 +3,14 @@ package Entregable;
  * @author Grupo34
  * @version 1.0
  */
-public class Usuario {
+public class Persona{
 	private String nombre;
 	private String apellido;
 	private String fechaNacimiento;
 	private String pais;
 	private String email;
-	private String contrasenia;
-	private boolean estadoBajaAlta;
 	
-	public Usuario () {
+	public Persona () {
 		
 	}
 	/**
@@ -25,14 +23,12 @@ public class Usuario {
 	 * @param contrasenia
 	 * @param estadoBajaAlta
 	 */
-	public Usuario (String nombre, String apellido, String fechaNacimiento, String pais, String email, String contrasenia, boolean estadoBajaAlta) {
+	public Usuario (String nombre, String apellido, String fechaNacimiento, String pais, String email) {
 		this.nombre= nombre;
 		this.apellido= apellido;
 		this.fechaNacimiento= fechaNacimiento;
 		this.pais= pais;
 		this.email= email;
-		this.contrasenia= contrasenia;
-		this.estadoBajaAlta= estadoBajaAlta;
 	}
 	/**
 	 * 
@@ -104,33 +100,4 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	/**
-	 * 
-	 * @return contrasenia
-	 */
-	public String getContrasenia() {
-		return contrasenia;
-	}
-	/**
-	 * 
-	 * @param contrasenia
-	 */
-	public void setContrasenia(String contrasenia) {
-		this.contrasenia = contrasenia;
-	}
-	/**
-	 * 
-	 * @return estadoBajaAlta
-	 */
-	public boolean isEstadoBajaAlta() {
-		return estadoBajaAlta;
-	}
-	/**
-	 * 
-	 * @param estadoBajaAlta
-	 */
-	public void setEstadoBajaAlta(boolean estadoBajaAlta) {
-		this.estadoBajaAlta = estadoBajaAlta;
-	}
-	
 }
