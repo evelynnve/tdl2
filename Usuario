@@ -3,7 +3,7 @@ package Entregable;
  * @author Grupo34
  * @version 1.0
  */
-
+*/hola
 public class Usuario {
 	private String nombre;
 	private String apellido;
