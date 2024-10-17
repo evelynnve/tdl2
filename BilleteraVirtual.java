@@ -60,8 +60,11 @@ public class BilleteraVirtual {
 	public Transacciones getHistorial() {
 		return historial;
 	}
-
+	/**
+	 * 
+	 * @param moneda
+	 */
 	public void setHistorial(List<Transacciones> historial) {
-		this.historial.addAll(historial);
+		this.historial= historial;
 	}
 }
