@@ -6,6 +6,8 @@ package Entregable;
 public class Moneda {
 	private String nombre;
 	private double valor;
+	private String simbolo;
+	private double cantidad;
 	
 	public Moneda () {
 		
@@ -15,9 +17,11 @@ public class Moneda {
 	 * @param nombre
 	 * @param valor
 	 */
-	public Moneda (String nombre, double valor) {
+	public Moneda (String nombre, double valor, String simbolo, double cantidad) {
 		this.setNombre(nombre);
 		this.setValor(valor);
+		this.setSimbolo(simbolo);
+		this.setCantidad(cantidad);
 	}
 	/**
 	 * 
@@ -49,5 +53,33 @@ public class Moneda {
 	 */
 	public void setValor(double valor) {
 		this.valor = valor;
+	}
+	/**
+	 * 
+	 * @return simbolo
+	 */
+	public String getSimbolo() {
+		return simbolo;
+	}
+	/**
+	 * 
+	 * @param simbolo
+	 */
+	public void setSimbolo(String simbolo) {
+		this.simbolo = simbolo;
+	}
+	/**
+	 * 
+	 * @param cantidad
+	 */
+	public double getCantidad() {
+		return cantidad;
+	}
+	/**
+	 * 
+	 * @param cantidad
+	 */
+	public void setCantidad(double cantidad){
+		this.cantidad= cantidad;
 	}
 }
