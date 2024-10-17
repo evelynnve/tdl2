@@ -13,8 +13,9 @@ public class Swap extends Transacciones {
 	private List<Double> tasaDeMercado;
 	private List<Double> comAplicables;
 	
-	public Swap () {
-		
+	public Swap (List<Double> tasaDeMercado,List<Double> comAplicables) {
+		this.tasaDeMercado = tasaDeMercado;
+		this.comAplicable = comAplicable;
 	}
 	/**
 	 * 
