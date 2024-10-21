@@ -7,6 +7,6 @@ public class CompararNomenclatura implements Comparator<Moneda> {
 		if (!(m1.getSimbolo().equals(m2.getSimbolo())))
 			return m1.getSimbolo().compareTo(m2.getSimbolo());
 		else
-			return m1.getNombre().compareTo(m2.getNombre());
+			return m1.getSimbolo().compareTo(m2.getSimbolo());
 	}
 }
